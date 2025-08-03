@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @CyberAkhil
 - 👀 I’m interested in AIML
-- 🌱 Python , C , DSA using C  
+- 🌱 Python , C , DSA using Java , HTML , CSS   
 - 📫 How to reach me IG - @nikkhil_g18
 - 😄 Pronouns: He/Him
 
