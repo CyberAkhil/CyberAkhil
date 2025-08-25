@@ -2,6 +2,7 @@
 - 👀 I’m interested in AIML
 - 🌱 Python , C , DSA using Java , HTML , CSS   
 - 📫 How to reach me IG - @nikkhil_g18
+- ✉ Mail - nikhilgumasta1@gmail.com
 - 😄 Pronouns: He/Him
 
 <!---
