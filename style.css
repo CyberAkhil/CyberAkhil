@@ -6,7 +6,7 @@
 /* ── Variables ── */
 :root {
   --green:      #00ff41;
-  --green-dim:  #00cc33;
+  --green-dim:  #ff0000;
   --green-dark: #002200;
   --green-glow: rgba(0,255,65,0.15);
   --bg:         #020a02;
