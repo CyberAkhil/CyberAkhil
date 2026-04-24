@@ -6,7 +6,7 @@
 /* ── Variables ── */
 :root {
   --green:      #00ff41;
-  --green-dim:  #ff0000;
+  --green-dim:  #00cc33;
   --green-dark: #002200;
   --green-glow: rgba(0,255,65,0.15);
   --bg:         #020a02;
@@ -16,7 +16,7 @@
   --border:     rgba(0,255,65,0.12);
   --border-h:   rgba(0,255,65,0.4);
   --text:       #8aff9a;
-  --text-dim:   #3d6645;
+  --text-dim:   #58fe79;
   --white:      #e8ffe8;
   --red:        #ff4444;
   --yellow:     #ffcc00;
