@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nikhil Gumasta — CS/IT Student, Web Developer, CyberAkhil">
+  <title>Nikhil Gumasta | CyberAkhil</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="pre-content">
+      <div class="pre-logo">NG</div>
+      <div class="pre-bar"><div class="pre-fill"></div></div>
+      <div class="pre-text">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+  </div>
+
+  <!-- Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" data-cursor="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">CyberAkhil</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-num="01">About</a></li>
+        <li><a href="#skills" data-num="02">Skills</a></li>
+        <li><a href="#projects" data-num="03">Projects</a></li>
+        <li><a href="#achievements" data-num="04">Achievements</a></li>
+        <li><a href="#contact" data-num="05">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">CS/IT Student · Developer · Hacker Mindset</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" data-text="NIKHIL">NIKHIL</span>
+        <span class="name-line accent" data-text="GUMASTA">GUMASTA</span>
+      </h1>
+      <div class="hero-terminal">
+        <span class="prompt">~/nikhil $</span>
+        <span class="typed-output" id="typedOutput"></span>
+        <span class="t-cursor">█</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="cta-btn primary">
+          <span class="btn-text">View Projects</span>
+          <span class="btn-arrow">→</span>
+          <span class="btn-bg"></span>
+        </a>
+        <a href="#contact" class="cta-btn ghost">
+          <span class="btn-text">Contact Me</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="1">0</span>
+          <span class="stat-label">OSS Contrib</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glitch-text" data-text="&lt;/&gt;">&lt;/&gt;</div>
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="orbit-dot"></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">01</span>
+        <span class="label-line"></span>
+        <span class="label-text">ABOUT ME</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-title">WHO AM I<span class="accent">?</span></h2>
+          <p>Hey! I'm <strong>Nikhil Gumasta</strong>, known online as <strong class="green">CyberAkhil</strong>. I'm a passionate CS/IT student who loves building things and understanding how they work at a deep level.</p>
+          <p>My interests span <span class="green">web development</span>, <span class="green">cybersecurity</span>, and <span class="green">open-source contribution</span>. I believe in learning by doing — every project teaches me something new.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to GitHub, or diving into CTF challenges. I thrive on turning complex problems into elegant solutions.</p>
+          <div class="about-links">
+            <a href="https://github.com/CyberAkhil" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:nikhilgumasta1@gmail.com" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email
+            </a>
+            <a href="https://nikhilg.is-a.dev" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Website
+            </a>
+          </div>
+        </div>
+        <div class="terminal-card reveal-right">
+          <div class="term-header">
+            <div class="term-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="term-title">nikhil@cyberakhil — zsh — 80×24</span>
+          </div>
+          <div class="term-body" id="termBody">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">02</span>
+        <span class="label-line"></span>
+        <span class="label-text">TECH STACK</span>
+      </div>
+      <h2 class="section-title reveal">SKILLS &amp; <span class="accent">TOOLS</span></h2>
+
+      <div class="skills-waterfall" id="skillsWaterfall">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">03</span>
+        <span class="label-line"></span>
+        <span class="label-text">WORK</span>
+      </div>
+      <h2 class="section-title reveal">FEATURED <span class="accent">PROJECTS</span></h2>
+
+      <div class="projects-slider" id="projectsSlider">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Cards injected by JS -->
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous">←</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next">→</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Grid cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ACHIEVEMENTS ═══ -->
+  <section id="achievements" class="section achieve-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">04</span>
+        <span class="label-line"></span>
+        <span class="label-text">ACHIEVEMENTS</span>
+      </div>
+      <h2 class="section-title reveal">UNLOCKED <span class="accent">BADGES</span></h2>
+      <div class="achieve-waterfall" id="achieveWaterfall">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-num">05</span>
+        <span class="label-line"></span>
+        <span class="label-text">CONTACT</span>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-left reveal-left">
+          <h2 class="section-title">LET'S <span class="accent">CONNECT</span></h2>
+          <p class="contact-desc">Whether you want to collaborate, discuss tech, or just say hi — I'm always open. Let's build something amazing together.</p>
+          <div class="contact-items">
+            <a href="mailto:nikhilgumasta1@gmail.com" class="contact-item">
+              <div class="ci-icon">✉</div>
+              <div class="ci-info">
+                <span class="ci-label">EMAIL</span>
+                <span class="ci-value">nikhilgumasta1@gmail.com</span>
+              </div>
+              <span class="ci-arrow">↗</span>
+            </a>
+            <a href="https://github.com/CyberAkhil" target="_blank" class="contact-item">
+              <div class="ci-icon">⌥</div>
+              <div class="ci-info">
+                <span class="ci-label">GITHUB</span>
+                <span class="ci-value">github.com/CyberAkhil</span>
+              </div>
+              <span class="ci-arrow">↗</span>
+            </a>
+            <a href="https://nikhilg.is-a.dev" target="_blank" class="contact-item">
+              <div class="ci-icon">◈</div>
+              <div class="ci-info">
+                <span class="ci-label">DOMAIN</span>
+                <span class="ci-value">nikhilg.is-a.dev</span>
+              </div>
+              <span class="ci-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal-right">
+          <div class="terminal-card">
+            <div class="term-header">
+              <div class="term-dots">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <span class="term-title">send_message.sh</span>
+            </div>
+            <div class="term-body">
+              <div class="t-row"><span class="tp">~$</span><span class="tc"> ./connect --with nikhil</span></div>
+              <div class="t-row out">Establishing secure connection...</div>
+              <div class="t-row out g">✓ Connection established!</div>
+              <div class="t-row out">Ping: 1ms · Encryption: AES-256</div>
+              <div class="t-row out">Ready to receive messages.</div>
+              <br>
+              <div class="t-row"><span class="tp">~$</span><span class="tc"> echo "Let's build something!"</span></div>
+              <div class="t-row out w">Let's build something!</div>
+              <br>
+              <div class="t-row"><span class="tp">~$</span><span class="t-cursor">█</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">NIKHIL<span>G</span></div>
+      <p>Designed &amp; Built by <span class="green">Nikhil Gumasta</span> · CyberAkhil · nikhilg.is-a.dev</p>
+      <p class="footer-sub">// Made with 💚 and countless terminal sessions</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
